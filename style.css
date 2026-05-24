@@ -1,9 +1,28 @@
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: hsl(30, 18%, 87%);
+.container {
+  font-family: 'Young Serif', 400, serif, 'Outfit',400, 600, 700, sans-serif;
+  min-height: 100vh;
   margin: 0;
   padding: 2rem;
+  background-color: hsl(30, 54%, 90%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
+
+.header-image {
+  width: 100%;
+  border-radius: 1.5rem;
+  object-fit: cover;
+}
+.page {
+  width: min(1024px, 100%);
+  background-color: #ffffff;
+  border-radius: 1.5rem;
+  padding: 2rem 2rem 6rem;
+  min-height: 90vh;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+}
+
 .menu{
   color: hsl(332, 51%, 32%);
   letter-spacing: 0.5px;
@@ -43,4 +62,7 @@ h2 {
   border-bottom: none;
 }
 
-
+@media (min-width: 600px) and (max-width: 1024px) {
+    body {
+        padding: 1rem;
+    }   
